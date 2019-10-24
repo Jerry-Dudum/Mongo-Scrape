@@ -8,8 +8,18 @@
         <a href="/articles">API Articles</a>
     </div>
 </div>
-<div class="wrap">
-    <div class="row">
 
-    </div>
+
+<div id="articles">
+        {{#each articles}}
+        <div class="card bg-light">
+            <img class="card-img-top" src="{{image}}">
+            <div class="card-body">
+                <h5 class="card-title text-dark">{{title}}</h5>
+                <p class="card-text text-dark">{{summary}}</p>
+                <a class="btn btn-primary" href="{{link}}">Read More</a>
+                <button id={{_id}} data-toggle="modal" data-target="#myModal" class="notes btn btn-primary pb-1">Notes</button>
+            </div>
+        </div>
+        {{/each}}
 </div>
