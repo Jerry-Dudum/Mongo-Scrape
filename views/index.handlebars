@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4 text-center">Mongo Scraper</h1>
+        <h1 class="display-4 text-center">Mongo Scraper - PC Gamer</h1>
     </div>
     <div class="text-center">
         <a href="/scrape">Scrape Articles</a>
@@ -18,8 +18,12 @@
                 <h5 class="card-title text-dark">{{title}}</h5>
                 <p class="card-text text-dark">{{summary}}</p>
                 <a class="btn btn-primary" href="{{link}}">Read More</a>
-                <button id={{_id}} data-toggle="modal" data-target="#myModal" class="notes btn btn-primary pb-1">Notes</button>
+                <button data-id="{{_id}}" class="notes btn btn-primary">Notes</button>
             </div>
         </div>
         {{/each}}
+</div>
+
+<div id="notes">
+
 </div>
