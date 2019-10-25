@@ -42,3 +42,7 @@ $(document).on("click", "#savenote", function () {
     $("#titleinput").val("");
     $("#bodyinput").val("");
 });
+
+$(document).on("click", "#clear", function() {
+    $("#articles").empty();
+})
